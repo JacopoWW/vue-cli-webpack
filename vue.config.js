@@ -8,9 +8,10 @@ module.exports = {
       .before('vue-loader')
       .use(CleanWebpackPlugin, [{
         cleanOnceBeforeBuildPatterns: ['/news'],
+        cleanStaleWebpackAssets: false,
       }]);
   },
-  publicPath: '/project/dist/views/',
+  // publicPath: '/project/dist/views/',
   outputDir: 'project/dist/views/',
   devServer: {
     contentBase: path.join(__dirname, 'project'),
@@ -19,7 +20,7 @@ module.exports = {
   pages: { // filename相对于路径为outputDir
     index: {
       entry: 'src/nav_menu.js',
-      template: 'project/index.html',
+      template: 'project/dist/views/layout.html',
       filename: 'layout.html',
     },
     others: {
