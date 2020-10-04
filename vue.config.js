@@ -22,6 +22,7 @@ module.exports = {
       entry: 'src/nav_menu.js',
       template: 'project/dist/views/layout.html',
       filename: 'layout.html',
+      minify: false,
     },
     others: {
       entry: 'src/main.js',
