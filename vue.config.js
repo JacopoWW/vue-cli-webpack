@@ -16,6 +16,11 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, 'project'),
     compress: true,
+    proxy: {
+      '/': {
+        
+      }
+    }
   },
   pages: { // filename相对于路径为outputDir
     index: {
