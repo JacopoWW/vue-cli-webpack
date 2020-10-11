@@ -15,12 +15,7 @@ module.exports = {
   outputDir: 'project/dist/views/',
   devServer: {
     contentBase: path.join(__dirname, 'project'),
-    compress: true,
-    proxy: {
-      '/': {
-        
-      }
-    }
+    // compress: true,
   },
   pages: { // filename相对于路径为outputDir
     index: {
